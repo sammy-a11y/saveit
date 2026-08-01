@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Download, Music, Package, Copy, Check, User, Clock } from "lucide-react";
 import toast from "react-hot-toast";
 
-const API = "http://localhost:5000";
+const API = "https://saveit-backend-cok0.onrender.com";
 
 const platformColors = {
   tiktok: "#FF0050",

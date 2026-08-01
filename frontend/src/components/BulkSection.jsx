@@ -4,7 +4,7 @@ import { Plus, Trash2, Download, X, Link } from "lucide-react";
 import toast from "react-hot-toast";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://saveit-backend-cok0.onrender.com";
 
 const platformColors = {
   tiktok: "#FF0050",
