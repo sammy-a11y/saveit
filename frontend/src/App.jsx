@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Zap, Shield, Globe, Star, ChevronDown, ChevronUp } from "lucide-react";
@@ -12,6 +13,12 @@ function App() {
   const [videoData, setVideoData] = useState(null);
   const [mode, setMode] = useState("single");
   const [openFaq, setOpenFaq] = useState(null);
+
+  // Wake up Render backend on load
+  useEffect(() => {
+    fetch("https://saveit-backend-cok0.onrender.com/api/ping")
+      .catch(() => {});
+  }, []);
 
   const faqs = [
     { q: "Is SaveIt free to use?", a: "Yes! SaveIt is 100% free. No account needed, no hidden fees." },

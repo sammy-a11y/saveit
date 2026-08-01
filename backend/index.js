@@ -204,6 +204,10 @@ app.post("/api/bulk-info", async (req, res) => {
   }
 });
 
+app.get("/api/ping", (req, res) => {
+  res.json({ status: "alive" });
+});
+
 app.listen(PORT, () => {
   console.log(`✅ SaveIt backend running on http://localhost:${PORT}`);
 });
