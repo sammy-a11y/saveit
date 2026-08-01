@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 :root {
   --bg-primary: #0A0A0F;
   --bg-secondary: #111118;
